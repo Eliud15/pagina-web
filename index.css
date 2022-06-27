@@ -1,0 +1,428 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+/* CUERPO DE LA PAGINA */
+body{
+   background-color: #282c34;
+}
+/* CABEZERA*/
+.cabezara{
+   display: flex;
+   justify-content: space-between;
+   background-color: #282c34;
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   z-index: 500;
+   border-bottom: 2px solid white;
+   padding-bottom: 5px;
+}
+/* TITULO */
+.titulo{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    width: 100%;
+    
+  }
+/* ESLOGAN */
+.eslogan{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 130px;
+   
+    
+}
+/* MENU */
+.submenu{
+    position: fixed;
+   width: 200px;
+   height: 450px;
+   background-color: black;
+   right: -1px;
+   visibility: hidden;
+   z-index: 100;
+   overflow-y: hidden;
+  overflow: scroll;
+ }
+
+  /* CERRAR EL MENU */
+ .cerrar{
+    position: fixed;
+   color: red;
+   right: 170px;
+   cursor: pointer;
+   padding: 5px;
+   top: -3px;
+ }
+ .cerrar:hover{
+    position: fixed;
+   color: rgb(255, 255, 255);
+   right: 170px;
+   cursor: pointer;
+   border: 1px solid red;
+   padding: 5px;
+ }
+ /* LISTA DEL MENU */
+ ul{
+    text-align: center;
+  }
+  li{ 
+    padding: 20px;
+    margin-left: -30px;
+  }
+  .list-submenu{
+   color: white;
+   text-decoration: none;
+   padding: 5px;
+  }
+  .list-submenu:hover{
+   color: limegreen;
+   border-bottom: 1px solid white;
+   transition:  all .2s ;
+   font-size: 18px;
+    }
+  /* PALABRA BUSCAR DEL MENU */
+  .buscar{ 
+   color: white;
+   margin-left: -30px;
+   margin-top: 30px;
+   border-bottom: 1px solid white;
+   padding-bottom: 5px;
+  }
+ /* ICONO DE ZONA GAMER */
+.icon {
+    width: 80px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+ /* PIE DE PAGINA*/
+.pie-de-pagina{
+padding: 15px;
+margin-top: 5px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ height: 100px;
+ background-color: #282c34;;
+justify-content: center;
+ display: flex;
+ color: white;
+ border-top: 2px solid white;
+ 
+}
+ /* MENSAJE DE PIE DE PAGINA*/
+ .mensaje{
+position: absolute;
+margin-top: 45px;
+color: white;
+}
+.contactame{
+    position: absolute;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    }
+    .correo{
+        color: limegreen;
+        text-decoration: none;
+    }
+ /* DERECHOS RESERVADOS*/
+ .derechos{
+    position: absolute;
+    margin-top: 90px;
+    color: white;
+    }
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedores-img{
+    width: 160px;
+    height: 220px;   
+    background-color: black;
+    border-radius: 5%;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    margin: 80px;
+}
+.contenedores-img:hover{
+    width: 160px;
+    height: 220px;
+    background-color: black;
+    border-radius: 5%;
+    overflow: hidden;
+}
+.titulos-juegos{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT',
+     Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+}
+.img{
+    width: 100%;
+    height: 130px;
+}
+.descarga{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px ;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    padding-left: 43px;
+    padding-right: 43px;
+}
+.descarga:hover{
+    color: lawngreen;
+    text-decoration: none;
+    border-radius: 5px ;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    padding-left: 43px;
+    padding-right: 43px;
+}
+.menu{
+  float: right;
+  right: 1;
+  width: 70px;
+  margin-top: -40px;
+}
+.titulo-seccion{
+    color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+
+
+
+
+ @media (max-width: 445px) {
+   
+     /* ESLOGAN */
+     .eslogan{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+  }
+  @media (max-width: 390px) {
+    /* TITULO */
+    .titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+    /* ICONO DE ZONA GAMER */
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .menu{
+        float: right;
+        right: 1;
+        width: 70px;
+        margin-top: -30px;
+      }
+
+ }
+ @media (max-width: 318px) {
+    .contenedor{
+        display: flex;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        width: 100%;
+    }
+    .contenedores-img{
+        width: 120px;
+        height: 180px;   
+        background-color: black;
+        border-radius: 5%;
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        margin: 80px;
+    }
+    .contenedores-img:hover{
+        width: 125px;
+        height: 185px;
+        background-color: black;
+        border-radius: 5%;
+        overflow: hidden;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+    .titulos-juegos{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT',
+         Calibri, 'Trebuchet MS', sans-serif;
+          color: white;
+          font-size: small;
+    }
+    .img{
+        width: 100%;
+        height: 50%;
+    }
+    .descarga{
+        color: white;
+        text-decoration: none;
+        position: relative;
+       font-size: 10px;
+       background: none;margin:  0px auto;
+       align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+    .descarga:hover{
+        color: lawngreen;
+        text-decoration: none;
+        position: absolute;
+        font-size: small;
+        background: none;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+
+ }
+ @media (max-width: 296px) {
+    .contenedor{
+        display: flex;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+         background:none; 
+    }
+    .contenedores-img{
+        width: 120px;
+        height: 150px;   
+        
+        border-radius: 5%;
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        margin: 80px;
+    }
+    .contenedores-img:hover{
+        width: 125px;
+        height: 155px;
+        border-radius: 5%;
+        overflow: hidden;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+    .titulos-juegos{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT',
+         Calibri, 'Trebuchet MS', sans-serif;
+          color: white;
+          font-size: small;
+    }
+    .img{
+        width: 100%;
+        height: 50%;
+    }
+    .descarga{
+        color: white;
+        text-decoration: none;
+        position: absolute;
+       font-size: 10px;
+       background: none;margin:  0px auto;
+       align-items: center;
+        align-self: center;
+        align-content: center;
+        float: left;
+        left: -1px;
+        margin-top: -145px;
+    }
+    .descarga:hover{
+        color: lawngreen;
+        text-decoration: none;
+        position: absolute;
+        font-size: small;
+        background: none;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+
+ }
+ @media (max-width: 300px) {
+    
+    .contactame{
+        position: absolute;
+        margin-top: 70px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        }
+        .mensaje{
+            font-size: 10px; 
+            margin-top: 50px;
+            margin-bottom: 20px;
+      }
+      /* DERECHOS RESERVADOS*/
+      .derechos{
+          font-size: 10px;      
+      }
+ }
+ @media (max-width: 276px) {
+    /* TITULO */
+    .titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+     /* ICONO DE ZONA GAMER */
+    .icon {
+        width: 30px;
+        height: 30px;
+      margin-top: 15px;
+      visibility: hidden;
+    }
+    /* ICONO DEL MENU */
+  
+ }
+
+@media (max-height: 450px) {
+    /* MENU */
+    .submenu{
+        position: fixed;
+       width: 200px;
+       height: 250px;
+       background-color: black;
+       right: -1px;
+       visibility: hidden;
+       z-index: 100;
+       overflow-y: hidden;
+      overflow: scroll;
+     }
+     nav{
+        position: fixed;
+       width: 20px;
+       height: 20px;
+       background-color: black;
+       right: 1px;
+       top: 230px;
+       z-index: 110;
+     }
+    
+  }
+
+  
+  
+
