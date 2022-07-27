@@ -25,7 +25,10 @@
          </div>
          </h1> 
          <div  id="submenu" class="submenu">
-            <p onclick="cerrar()" id="cerrar" class="cerrar">X</p> 
+            <div>
+                <p onclick="cerrar()" id="cerrar" class="cerrar">X</p>
+            </div>
+             
              <ul>
                  <p class="buscar">Buscar juegos</p>
                  <li> <a onclick="cerrar()" class="list-submenu" href="#Estrategia">Estrategia</a></li>
@@ -457,14 +460,16 @@
 
 <!-- SCRIP JAVASCRIP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 <script>
-function cerrar(){ 
-let submenu=document.getElementById("submenu");
-submenu.style.visibility="hidden";
+    function cerrar(){ 
+    let submenu=document.getElementById("submenu");
+    submenu.classList.remove("anim");
+    submenu.style.visibility="hidden";
 
 }
 function aparecer(){ 
-let submenu=document.getElementById("submenu");
-submenu.style.visibility="visible";
+    let submenu=document.getElementById("submenu");
+    submenu.classList.add("anim");
+    submenu.style.visibility="visible";
 }
 </script>  
 </body>

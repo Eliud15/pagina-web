@@ -48,20 +48,23 @@ body{
    overflow-y: hidden;
   overflow: scroll;
  }
-
+.anim{
+    animation-name: anim;
+    animation-duration: .9s;
+}
   /* CERRAR EL MENU */
  .cerrar{
-    position: fixed;
+    position: absolute;
    color: red;
-   right: 170px;
+   right: 150px;
    cursor: pointer;
    padding: 5px;
-   top: -3px;
+   
  }
  .cerrar:hover{
-    position: fixed;
+    position: absolute;
    color: rgb(255, 255, 255);
-   right: 170px;
+   right: 150px;
    cursor: pointer;
    border: 1px solid red;
    padding: 5px;
@@ -422,7 +425,16 @@ color: white;
      }
     
   }
-
+@keyframes anim{
+    from{
+        transform: translatex(200px);
+        visibility: 0;
+    }
+    to{
+        visibility: 1;
+        
+    }
+}
   
   
 
